@@ -5,7 +5,7 @@ export const Logout = () => {
 
   return (
     isAuthenticated && (
-      <button onClick={() => logout()} className="btn btn-primary">
+      <button onClick={() => logout()} className="btn btn-outline-primary">
         {" "}
         Logout
       </button>

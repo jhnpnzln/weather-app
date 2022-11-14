@@ -26,7 +26,11 @@ export function HomePage() {
           </div>
         </div>
         <div className="home-body">
-          <SearchBar placeHolder="Enter City" />
+          <div className="row justify-content-md-center">
+            <div className="col-md-6">
+              <SearchBar placeHolder="Enter City" />
+            </div>
+          </div>
         </div>
       </div>
     )

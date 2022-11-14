@@ -8,7 +8,7 @@ import WeatherAPI from "../services/weatherAPI";
 export function WeatherPage() {
   const navigate = useNavigate();
   const { id } = useParams();
-  const {isAuthenticated} = useAuth0()
+  const { isAuthenticated } = useAuth0();
   const [weatherData, setWeatherData] = useState([]);
   const [city, setCity] = useState("");
 
@@ -17,8 +17,8 @@ export function WeatherPage() {
   };
 
   useEffect(() => {
-    !isAuthenticated && (navigate("/"))
-    
+    !isAuthenticated && navigate("/");
+
     WeatherAPI(id).then((res) => {
       setWeatherData(res.data.list);
       setCity(res.data.city.name);
@@ -29,7 +29,9 @@ export function WeatherPage() {
     <div className="weather-container">
       <h3>Weather Forecast for {city}</h3>
       <WeatherTable items={weatherData} />
-      <Buttons text="Back" handleOnClick={handleBack} />
+      <div className="weather-button-container d-grid gap-2 d-md-flex justify-content-md-end">
+        <Buttons text="Back" handleOnClick={handleBack} />
+      </div>
     </div>
   );
 }
