@@ -33,7 +33,8 @@ export const SearchBar = ({ label, placeHolder, ...props }) => {
     <>
       {label != "" ? <label>{label}</label> : null}
       <AsyncPaginate
-        placeHolder={placeHolder}
+        className="searchBar"
+        placeHolder="Enter City"
         debounceTimeout={600}
         onChange={handleOnchage}
         loadOptions={loadOptions}

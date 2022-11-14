@@ -5,7 +5,7 @@ export const Login = () => {
 
   return (
     !isAuthenticated && (
-      <button onClick={() => loginWithRedirect()} className="btn btn-primary">
+      <button type="button" onClick={() => loginWithRedirect()} className="btn btn-outline-primary">
         {" "}
         Login
       </button>

@@ -7,7 +7,7 @@ export const WeatherTable = ({ items, ...props }) => {
   };
   return (
     <>
-      <Table className="table table-dark table-striped">
+      <Table className="table table-dark table-striped table-weather">
         <thead>
           <tr>
             <th>Date</th>

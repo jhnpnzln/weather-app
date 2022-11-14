@@ -9,6 +9,9 @@ import { WeatherPage } from "./pages/weather";
 import { Navbar } from "./components/navbar";
 import ErrorPage from "./pages/error404";
 
+// custom SASS Styling
+import './assets/styles/App.sass'
+
 function App() {
   const { isAuthenticated } = useAuth0();
   return (
