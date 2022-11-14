@@ -1,5 +1,4 @@
 import SearchBar from "../components/searchBar";
-import Buttons from "../components/button";
 export function HomePage() {
   return (
     <div className="home-container">
@@ -9,7 +8,6 @@ export function HomePage() {
         </div>
         <div className="home-body">
             <SearchBar placeHolder="Enter City" />
-            <Buttons text="Display Weather" />
         </div>
     </div>
   );
