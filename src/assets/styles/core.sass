@@ -1,0 +1,27 @@
+body
+	background: $paperGray
+
+.sticky
+	position: fixed
+	z-index: 999
+	top: 0
+	width: 100%
+
+.card
+	.card-header
+		border-bottom: none
+
+@media screen and (max-width: $mobileScreen)
+	.navbar
+		.navbar-app-name
+			display: none
+	.landing-page-container
+		margin: 38px 8%!important
+	p.landing-page-message
+		font-size: 14px!important
+	.home-header
+		display: none
+	.home-body
+		margin-top: 30px
+	.table-weather tr th:nth-child(n+3), tr td:nth-child(n+3)
+		display: none
